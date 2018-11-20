@@ -1,0 +1,50 @@
+Configuration	check
+STM32CubeMX 	4.27.0
+Date	11/08/2018
+MCU	STM32F042K6Tx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+SYS	Serial_Wire	SYS_SWCLK	PA14
+SYS	Serial_Wire	SYS_SWDIO	PA13
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+USART2	Asynchronous	USART2_RX	PA15
+USART2	Asynchronous	USART2_TX	PA2
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+2	PF0-OSC_IN*	RCC_OSC_IN	MCO
+8	PA2	USART2_TX	VCP_TX
+23	PA13	SYS_SWDIO	SWDIO
+24	PA14	SYS_SWCLK	SWCLK
+25	PA15	USART2_RX	VCP_RX
+26	PB3	GPIO_Output	LD3 [Green]
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : check
+Project Folder : E:\check\nucleo32\check
+Toolchain / IDE : MDK-ARM V5
+Firmware Package Name and Version : STM32Cube FW_F0 V1.9.0
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy only the necessary library files
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : No
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : 
+
+
+
+
+
